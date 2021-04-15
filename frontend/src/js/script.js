@@ -49,6 +49,7 @@ Login.addEventListener('click', () => {
     
             .catch(function (err) {
                 console.log(err);
+                
             });
         }
 })
