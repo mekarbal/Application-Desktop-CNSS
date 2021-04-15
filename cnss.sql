@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 15 avr. 2021 à 22:52
+-- Généré le :  ven. 16 avr. 2021 à 01:31
 -- Version du serveur :  10.1.36-MariaDB
 -- Version de PHP :  7.2.11
 
@@ -62,11 +62,7 @@ CREATE TABLE `employees` (
 
 INSERT INTO `employees` (`id`, `name`, `email`, `phone`, `mat`, `password`) VALUES
 (1, 'Salima Elhamdi', 'Salima@gmail.com', '0543345676', '124GRB', '$2a$10$6mEaN3bXWRySaOi89ylON.b/kpgTNcRevkR/88dJcJS6M8HTh2Ugi'),
-(3, 'Dounia', 'Dounia@gmail.com', '0543345676', '124GRB', '$2a$10$YUSNGQ7HyMqDL7yICkVCXeZqu0rHJpaUtBy/T04v/NS1yjggvAjf6'),
-(10, 'Zakaria', 'Zakaria@gmail.com', '0654567687', 'H646466', '$2a$10$CLAXJjh3vX3ELhKXjpR7xOgM9OsKFi2uyf/4t6sR0XQaQdsTURVhG'),
-(11, 'Imane', 'Imane@gmail.com', '0565342234', 'AZ8769977', '$2a$10$0jXpYPNBiJmowy2ZJA0en.WXE6CPP3Gan0DJVCu8HGUR9XsLF0fca'),
-(12, 'Ahmed', 'Ahmed@gmail.com', '0676789866', 'HZE64566', '$2a$10$0.ecKD6N2QRZrMA6rajUUu8RJSauodz0qFLcf2Z1KiWHFi.f66Q8a'),
-(13, 'Ali ', 'Ali@gmail.com', '0676898767', 'P765755', '$2a$10$psR5U7fFB3xfAiHbMGT3MeW7f6VBwljQL2eeEYnSgTnwDXGwtokv6');
+(28, 'sara', 'sara@gmail.com', '0565456788', 'H75757', '$2a$10$5UEmEFFUjBu89KqeOX8FfOVzT01HHtNdLOa88nCKG2bJPDutm9r1C');
 
 --
 -- Index pour les tables déchargées
@@ -98,7 +94,7 @@ ALTER TABLE `agents`
 -- AUTO_INCREMENT pour la table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
