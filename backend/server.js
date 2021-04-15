@@ -1,9 +1,14 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+
 require("./configs/configs");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const chai = require("chai");
+const chaiHttp = require("chai-http");
+
+chai.use(chaiHttp);
 
 const swaggerOptions = {
   swaggerDefinition: {

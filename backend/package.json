@@ -4,22 +4,25 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "mocha db.test.js",
         "start": "nodemon ."
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
         "bcryptjs": "^2.4.3",
+        "chai": "^4.3.4",
+        "chai-http": "^4.3.0",
         "express": "^4.17.1",
         "jsonwebtoken": "^8.5.1",
         "mysql": "^2.18.1",
         "nodemailer": "^6.5.0",
-        "swagger-jsdoc": "^6.0.0",
+        "swagger-jsdoc": "6.0.0",
         "swagger-ui-express": "^4.1.6"
     },
     "devDependencies": {
         "dotenv": "^8.2.0",
+        "karma-chai": "^0.1.0",
         "nodemon": "^2.0.7"
     }
 }

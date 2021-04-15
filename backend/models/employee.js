@@ -42,7 +42,7 @@ Employee.login = function (email, password, result) {
           );
           result(token);
         } else {
-          result("email or password Incorrecr");
+          result("email or password Incorrect");
         }
       }
     }
