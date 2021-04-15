@@ -22,3 +22,9 @@ exports.login = function (req, res) {
     res.json(employee);
   });
 };
+exports.findById = function (req, res) {
+  Employee.findById(req.params.id, function (err, employee) {
+    if (err) res.send(err);
+    res.json(employee);
+  });
+};
