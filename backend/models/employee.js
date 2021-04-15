@@ -37,7 +37,7 @@ Employee.login = function (email, password, result) {
         const validPass = await bcrypt.compare(password, res[0].password);
         if (validPass) {
           const token = jwt.sign(
-            { id: res[0].id, email: res[0].email },
+            { id: res[0].id, email: res[0].email, id: res[0].id },
             "secret"
           );
           result(token);
