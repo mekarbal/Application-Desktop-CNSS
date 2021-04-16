@@ -14,8 +14,14 @@
 </head>
 
 <body>
+  <p id="logout">
+    <a href="#" class="btn btn-info btn-lg" id="logout">
+      <span class="glyphicon glyphicon-log-out"></span> Log out
+    </a>
+  </p> 
 
   <div class="container">
+    
     <div class="main-body" id="container">
 
       <!-- Breadcrumb -->
@@ -36,6 +42,7 @@
                 <img src="./img/Online page-amico.png" alt="Admin" class="rounded-circle" width="150">
                 <div class="mt-3">
                   <h4>Welcome</h4>
+                  
                 </div>
               </div>
             </div>
@@ -118,8 +125,12 @@
 
    var bigAppend = document.getElementById('append');
    bigAppend.innerHTML = html;
+    })
 
-
+    var logout = document.getElementById("logout");
+    logout.addEventListener('click', () => {
+      localStorage.removeItem("x-auth-token");
+      location.replace("index.html");
 
     })
   </script>

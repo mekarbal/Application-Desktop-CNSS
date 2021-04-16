@@ -12,6 +12,13 @@
 <body>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <p id="logout">
+      <a href="#" class="btn btn-info btn-lg" id="logout">
+        <span class="glyphicon glyphicon-log-out"></span> Log out
+      </a>
+    </p> 
+    
+ 
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-md-6">
@@ -62,6 +69,7 @@
                         </form>
                     </div>
                 </div>
+                
             </div>
         </div>
         <!-- end row -->
@@ -250,7 +258,15 @@ else
         console.log(err);
     });
 })
+    var logout = document.getElementById("logout");
+    logout.addEventListener('click', () => {
+      localStorage.removeItem("x-auth-token");
+      location.replace("index.html");
+      const myNotification = new Notification('Notification', {
+            body: 'User Logout'
+          })
 
+    })
   </script>
 </body>
 </html>
