@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+  <!-- ///logOut -->
   <p id="logout">
     <a href="#" class="btn btn-info btn-lg" id="logout">
       <span class="glyphicon glyphicon-log-out"></span> Log out
@@ -62,6 +64,8 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
 
+
+///JWT
     function parseJwt(token) {
       var base64Url = token.split('.')[1];
       var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
